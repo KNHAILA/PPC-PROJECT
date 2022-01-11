@@ -1,1 +1,27 @@
-[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set(C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\src\main\scala\Player.scala, C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\src\main\scala\Checker.scala, C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\src\main\scala\Heart.scala, C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\src\main\scala\DataBase.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\src\main\scala\Projet.scala, C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\src\main\scala\Node.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(upmc.akka.leader.Terminal, upmc.akka.leader.Projet, upmc.akka.leader.Start, upmc.akka.leader.Node)[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(upmc.akka.leader.Terminal, upmc.akka.leader.Projet, upmc.akka.leader.Start, upmc.akka.leader.Node)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\src\main\scala\Player.scala, C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\src\main\scala\Checker.scala, C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\src\main\scala\Projet.scala, C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\src\main\scala\Heart.scala, C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\src\main\scala\Node.scala, C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\src\main\scala\DataBase.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all 7 sources: invalidated sources (6) exceeded 50.0% of all sources[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 7 Scala sources to C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\target\scala-2.12\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.4:compile for Scala 2.12.12[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.4:compile for Scala 2.12.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 3cb4b04b for Scala compiler version 2.12.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Program Files\Java\jre1.8.0_202\lib\resources.jar;C:\Program Files\Java\jre1.8.0_202\lib\rt.jar;C:\Program Files\Java\jre1.8.0_202\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_202\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_202\lib\jce.jar;C:\Program Files\Java\jre1.8.0_202\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_202\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_202\classes;C:\Users\nhail\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\nhail\Downloads\Test-Pro\mozartGame_code\target\scala-2.12\classes;C:\Users\nhail\.ivy2\cache\com.typesafe.akka\akka-actor_2.12\jars\akka-actor_2.12-2.5.18.jar;C:\Users\nhail\.ivy2\cache\com.typesafe\config\bundles\config-1.3.3.jar;C:\Users\nhail\.ivy2\cache\org.scala-lang.modules\scala-java8-compat_2.12\bundles\scala-java8-compat_2.12-0.8.0.jar;C:\Users\nhail\.ivy2\cache\com.typesafe.akka\akka-remote_2.12\jars\akka-remote_2.12-2.5.18.jar;C:\Users\nhail\.ivy2\cache\com.typesafe.akka\akka-stream_2.12\jars\akka-stream_2.12-2.5.18.jar;C:\Users\nhail\.ivy2\cache\com.typesafe.akka\akka-protobuf_2.12\jars\akka-protobuf_2.12-2.5.18.jar;C:\Users\nhail\.ivy2\cache\org.reactivestreams\reactive-streams\jars\reactive-streams-1.0.2.jar;C:\Users\nhail\.ivy2\cache\com.typesafe\ssl-config-core_2.12\bundles\ssl-config-core_2.12-0.3.6.jar;C:\Users\nhail\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.12\bundles\scala-parser-combinators_2.12-1.1.1.jar;C:\Users\nhail\.ivy2\cache\io.netty\netty\bundles\netty-3.10.6.Final.jar;C:\Users\nhail\.ivy2\cache\io.aeron\aeron-driver\jars\aeron-driver-1.11.2.jar;C:\Users\nhail\.ivy2\cache\io.aeron\aeron-client\jars\aeron-client-1.11.2.jar;C:\Users\nhail\.ivy2\cache\org.agrona\agrona\jars\agrona-0.9.25.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mCompilation failed (CompilerInterface)[0m

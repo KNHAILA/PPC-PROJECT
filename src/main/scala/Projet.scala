@@ -6,6 +6,14 @@ import akka.actor._
 case class Terminal (id:Int, ip:String, port:Int)
 
 object Projet {
+     
+     // Communication entre les musiciens
+     val config = List (
+          Terminal (0, "127.0.0.1", 6000),
+          Terminal (1, "127.0.0.1", 6001),
+          Terminal (2, "127.0.0.1", 6002),
+          Terminal (3, "127.0.0.1", 6003)
+     )
 
      def main (args : Array[String]) {
           // Gestion des erreurs
@@ -23,7 +31,7 @@ object Projet {
 
           // Initialisation du node <id>
           val system = ActorSystem("LeaderSystem" + id, ConfigFactory.load().getConfig("system" + id))
-          val node = system.actorOf(Props(new Node(id)), "Node"+id)
+          val node = system.actorOf(Props(new Node(id, config)), "Node"+id)
 
 
           println("Is Done")
