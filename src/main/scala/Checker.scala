@@ -9,10 +9,8 @@ import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext.Implicits.global
 
 
-object CheckerActor {
-    abstract class Tick
-    case class CheckerTick () extends Tick
-}
+abstract class Tick
+case class CheckerTick () extends Tick
 
 class CheckerActor (val id:Int, val terminaux:List[Terminal], electionActor:ActorRef) extends Actor {
 
@@ -25,6 +23,7 @@ class CheckerActor (val id:Int, val terminaux:List[Terminal], electionActor:Acto
 
      var leader : Int = -1
 
+     
     def receive = {
 
          // Initialisation

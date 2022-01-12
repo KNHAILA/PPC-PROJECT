@@ -40,3 +40,5 @@ run 1
 run
 set fork in run:= true
 run 0
+run
+run 0

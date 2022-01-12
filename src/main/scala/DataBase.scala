@@ -862,11 +862,11 @@ Chord  (1600 , List (Note(69 ,192, 79))))))
 class DataBaseActor () extends Actor {
 
     import DataBaseActor._
-    import ProviderActor._
+    //import ProviderActor._
 
     def receive = {
         case GetMesure(num) => {
-            sender ! ReceiveMesure(measures(num))
+            //sender ! ReceiveMesure(measures(num))
         }
     }
 

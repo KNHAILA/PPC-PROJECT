@@ -51,7 +51,7 @@ val rcvr = device.getReceiver()
  
 
 class PlayerActor () extends Actor{
-  import DataBaseActor._
+ // import DataBaseActor._
   import PlayerActor._
   device.open()
 

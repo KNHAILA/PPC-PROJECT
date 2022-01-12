@@ -12,12 +12,18 @@ sealed trait AliveMessage
 case class IsAlive (id:Int) extends AliveMessage
 case class IsAliveLeader (id:Int) extends AliveMessage
 
+// Ajout de ma part
+// abstract class LeaderAlgoMessage
+// case class ALG (list:List[Int], nodeId:Int) extends LeaderAlgoMessage
+// case class AVS (list:List[Int], nodeId:Int) extends LeaderAlgoMessage
+// case class AVSRSP (list:List[Int], nodeId:Int) extends LeaderAlgoMessage
 
 class Node (val id:Int, val terminaux:List[Terminal]) extends Actor {
      
+     // Les differents acteurs du systeme
      val electionActor = context.actorOf(Props(new ElectionActor(this.id, terminaux)), name = "electionActor")
      val checkerActor = context.actorOf(Props(new CheckerActor(this.id, terminaux, electionActor)), name = "checkerActor")
-     val beatActor = context.actorOf(Props(new BeatActor(this.id)), name = "HeartActor")
+     val beatActor = context.actorOf(Props(new BeatActor(this.id)), name = "beatActor")
      val displayActor = context.actorOf(Props[DisplayActor], name = "displayActor")
 
      var allNodes:List[ActorSelection] = List()

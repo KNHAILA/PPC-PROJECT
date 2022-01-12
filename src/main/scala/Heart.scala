@@ -12,20 +12,20 @@ import akka.util.Timeout
 import java.net._
 
 
-object HeartActor {
-    abstract class BeatMessage
-    case class Beat (id:Int) extends BeatMessage
-    case class BeatLeader (id:Int) extends BeatMessage
-    
-    case class BeatTick () extends Tick
-    case class LeaderChanged (nodeId:Int)
-}
+sealed trait BeatMessage
+case class Beat (id:Int) extends BeatMessage
+case class BeatLeader (id:Int) extends BeatMessage
 
-class HeartActor (val id:Int) extends Actor {
-    
-    val time : Int = 50
-    val father = context.parent
-    var leader : Int = 0
+case class BeatTick () extends Tick
+
+case class LeaderChanged (nodeId:Int)
+
+
+class BeatActor (val id:Int) extends Actor {
+
+     val time : Int = 50
+     val father = context.parent
+     var leader : Int = 0 // On estime que le premier Leader est 0
 
     def receive = {
 
@@ -39,9 +39,11 @@ class HeartActor (val id:Int) extends Actor {
 
         // Objectif : prevenir tous les autres nodes qu'on est en vie
         case BeatTick => {
+           
           context.system.scheduler.schedule(3 seconds, 3 seconds) {
                     father ! Beat(id)
           }
+          
         }
 
         case LeaderChanged (nodeId) => 
